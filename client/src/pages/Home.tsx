@@ -79,7 +79,7 @@ export default function Home() {
           <div className="space-y-12">
             <div>
               <h2 className="text-3xl font-serif font-bold text-white mb-6">
-                Where Linear Models Fail—And Where You Win
+                Where Linear Models FailAnd Where You Win
               </h2>
 
               {/* Key Insight Card */}
