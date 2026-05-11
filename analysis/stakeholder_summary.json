@@ -1,0 +1,53 @@
+{
+  "project_title": "Housing Linearity Insights",
+  "problem_statement": "For housing stakeholders, estimate district-level median house value and explain when a straight-line model is too simple for place-based price dynamics.",
+  "credit_policy": {
+    "available_credits": 1000,
+    "credits_used": 1000,
+    "definition": "One credit equals one real California housing district observation used in modelling.",
+    "unused_credits": 0
+  },
+  "data_source": {
+    "name": "California Housing dataset via scikit-learn fetch_california_housing",
+    "url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html",
+    "full_dataset_samples": 20640,
+    "features_in_source": 8,
+    "target": "Median house value in units of $100,000"
+  },
+  "train_test_split": {
+    "train": 800,
+    "test": 200,
+    "random_state": 42
+  },
+  "linearity_story": {
+    "meaning": "Linearity assumes each feature changes predicted price by a constant straight-line amount, holding other variables fixed.",
+    "housing_issue": "Housing prices are spatial and social systems: income, location, age, occupancy, and coastal proximity interact, so the same income level can imply different values in different places.",
+    "evidence": "The best model improves R\u00b2 by 0.0467 over OLS and reduces log-RMSE by 7.9% on the 1000-credit experiment."
+  },
+  "best_model": {
+    "model": "XGBoost",
+    "family": "ML Ensemble",
+    "rmse_log": 0.1928,
+    "mae_log": 0.135,
+    "r2": 0.7374,
+    "cv_r2_mean": 0.7631,
+    "cv_r2_std": 0.0386,
+    "fit_seconds": 0.173,
+    "explanation": "Optimised gradient boosting for tabular nonlinear prediction.",
+    "rank": 1,
+    "linearity_position": "Learns layered nonlinear interactions"
+  },
+  "baseline_model": {
+    "model": "OLS",
+    "family": "Parametric",
+    "rmse_log": 0.2093,
+    "mae_log": 0.1527,
+    "r2": 0.6907,
+    "cv_r2_mean": 0.6676,
+    "cv_r2_std": 0.042,
+    "fit_seconds": 0.006,
+    "explanation": "Highest interpretability; tests the straight-line assumption.",
+    "rank": 6,
+    "linearity_position": "Assumes mostly straight-line effects"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "feature": "MedInc",
+    "importance": 0.3212783932685852
+  },
+  {
+    "feature": "income_age_interaction",
+    "importance": 0.16898132860660553
+  },
+  {
+    "feature": "AveOccup",
+    "importance": 0.10866200923919678
+  },
+  {
+    "feature": "bay_la_latitude_signal",
+    "importance": 0.09602517634630203
+  },
+  {
+    "feature": "Latitude",
+    "importance": 0.05881166830658913
+  },
+  {
+    "feature": "Longitude",
+    "importance": 0.05629134923219681
+  },
+  {
+    "feature": "coastal_longitude_signal",
+    "importance": 0.04837699234485626
+  },
+  {
+    "feature": "bedrooms_per_room",
+    "importance": 0.03985972702503204
+  },
+  {
+    "feature": "AveRooms",
+    "importance": 0.036428287625312805
+  },
+  {
+    "feature": "Population",
+    "importance": 0.025954656302928925
+  },
+  {
+    "feature": "AveBedrms",
+    "importance": 0.024549933150410652
+  },
+  {
+    "feature": "HouseAge",
+    "importance": 0.014780549332499504
+  }
+]

@@ -1,0 +1,13 @@
+feature,importance
+MedInc,0.3212784
+income_age_interaction,0.16898133
+AveOccup,0.10866201
+bay_la_latitude_signal,0.09602518
+Latitude,0.05881167
+Longitude,0.05629135
+coastal_longitude_signal,0.048376992
+bedrooms_per_room,0.039859727
+AveRooms,0.036428288
+Population,0.025954656
+AveBedrms,0.024549933
+HouseAge,0.014780549

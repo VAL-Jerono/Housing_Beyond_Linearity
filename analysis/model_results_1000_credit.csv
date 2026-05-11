@@ -1,0 +1,15 @@
+model,family,rmse_log,mae_log,r2,cv_r2_mean,cv_r2_std,fit_seconds,explanation,rank,linearity_position
+XGBoost,ML Ensemble,0.1928,0.135,0.7374,0.7631,0.0386,0.173,Optimised gradient boosting for tabular nonlinear prediction.,1,Learns layered nonlinear interactions
+Neural Network,ML Deep,0.1946,0.141,0.7324,0.7136,0.043,0.154,Flexible nonlinear function approximator; needs more tuning/data for production.,2,Learns flexible nonlinear representations
+Gradient Boosting,ML Ensemble,0.1981,0.1428,0.7228,0.7553,0.0422,0.73,Sequentially learns residual corrections for nonlinear structure.,3,Learns layered nonlinear interactions
+Random Forest,ML Ensemble,0.2015,0.1447,0.7131,0.7102,0.0573,0.418,Averages many trees to learn nonlinear effects and interactions.,4,Learns layered nonlinear interactions
+Spline Regression,GNPR,0.2044,0.1452,0.7048,0.7212,0.0628,0.011,Uses smooth basis functions to relax the straight-line assumption.,5,Learns smooth nonlinear curves
+OLS,Parametric,0.2093,0.1527,0.6907,0.6676,0.042,0.006,Highest interpretability; tests the straight-line assumption.,6,Assumes mostly straight-line effects
+Ridge,Parametric,0.2093,0.1526,0.6906,0.6678,0.0421,0.011,Linear model with coefficient shrinkage to reduce variance.,7,Assumes mostly straight-line effects
+Elastic Net,Parametric,0.2093,0.1527,0.6906,0.6679,0.0426,0.006,Linear regularisation combining Ridge and Lasso behaviour.,8,Assumes mostly straight-line effects
+Lasso,Parametric,0.2094,0.1528,0.6902,0.6675,0.0435,0.007,Linear model that can reduce weak coefficients toward zero.,9,Assumes mostly straight-line effects
+SVR,Kernel ML,0.21,0.1478,0.6883,0.6918,0.0507,0.188,Uses a radial kernel to model smooth nonlinear relationships.,10,Learns nonlinear similarity surfaces
+KNN,Instance-based ML,0.2132,0.1616,0.6787,0.6618,0.0718,0.01,Predicts from nearby districts in feature space.,11,Learns local neighbourhood patterns
+GAM,GNPR,0.2141,0.1475,0.6761,,,0.307,Generalised additive model: smooth feature effects with stronger interpretability than black-box ensembles.,12,Learns smooth nonlinear curves
+Polynomial Ridge,Parametric Nonlinear,0.2175,0.1477,0.6657,0.6638,0.0802,0.009,Adds squared and pairwise terms while retaining a linear estimator.,13,Adds limited curvature explicitly
+Decision Tree,ML Tree,0.2185,0.1603,0.6628,0.5443,0.0635,0.009,Captures thresholds and interactions but can be unstable alone.,14,Learns thresholds and interactions
