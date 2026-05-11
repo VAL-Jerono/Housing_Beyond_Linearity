@@ -34,7 +34,7 @@ export default function Home() {
           <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
             Most real estate decisions rely on linear assumptions about housing markets. 
             We tested 7 models on 20,640 California districts. The result: <span className="font-semibold text-teal-300">nonlinear models improve prediction accuracy by 36%.</span> 
-            That's not academic—that's competitive advantage.
+            That's not academic that's competitive advantage.
           </p>
           <div className="flex gap-4">
             <Button 
