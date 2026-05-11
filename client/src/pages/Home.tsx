@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { modelResults, stakeholderSummary } from "@/data/modelResults";
+import { REAL_DATA_GEOGRAPHY, REAL_DATA_INCOME_LOCATION, REAL_DATA_ROI } from "@/data/imageData";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import { useState } from "react";
 import { TrendingUp, MapPin, DollarSign, AlertCircle } from "lucide-react";
@@ -34,7 +35,7 @@ export default function Home() {
           <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
             Most real estate decisions rely on linear assumptions about housing markets. 
             We tested 7 models on 20,640 California districts. The result: <span className="font-semibold text-teal-300">nonlinear models improve prediction accuracy by 36%.</span> 
-            That's not academic that's competitive advantage.
+            That's not academic—that's competitive advantage.
           </p>
           <div className="flex gap-4">
             <Button 
@@ -79,7 +80,7 @@ export default function Home() {
           <div className="space-y-12">
             <div>
               <h2 className="text-3xl font-serif font-bold text-white mb-6">
-                Where Linear Models FailAnd Where You Win
+                Where Linear Models Fail—And Where You Win
               </h2>
 
               {/* Key Insight Card */}
@@ -163,7 +164,7 @@ export default function Home() {
               <Card className="bg-slate-800 border-slate-700 p-6 mb-8">
                 <h3 className="text-lg font-semibold text-white mb-4">1. Geography Is Destiny</h3>
                 <img 
-                  src="/manus-storage/real_data_geography_ed2f394c.png" 
+                  src={REAL_DATA_GEOGRAPHY} 
                   alt="California housing price distribution by geography" 
                   className="w-full rounded-lg mb-4"
                 />
@@ -177,7 +178,7 @@ export default function Home() {
               <Card className="bg-slate-800 border-slate-700 p-6 mb-8">
                 <h3 className="text-lg font-semibold text-white mb-4">2. Income's Impact Depends on Location</h3>
                 <img 
-                  src="/manus-storage/real_data_income_location_c892f06a.png" 
+                  src={REAL_DATA_INCOME_LOCATION} 
                   alt="Income vs price: coastal vs inland markets" 
                   className="w-full rounded-lg mb-4"
                 />
@@ -224,7 +225,7 @@ export default function Home() {
               {/* Image 3: ROI Chart */}
               <Card className="bg-slate-800 border-slate-700 p-8 mb-8">
                 <img 
-                  src="/manus-storage/real_data_roi_64a5bf2c.png" 
+                  src={REAL_DATA_ROI} 
                   alt="Model performance comparison: ROI perspective" 
                   className="w-full rounded-lg mb-6"
                 />
@@ -319,14 +320,5 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border-t border-slate-700 pt-6 text-sm text-slate-500">
-            <p>
-              This analysis investigates whether nonlinear and ensemble models outperform classical linear regression 
-              in predicting median house values. The findings support using advanced models for real estate investment decisions.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+          <div className="border-t border-slate-700 pt-6 text-sm te
+(Content truncated due to size limit. Use line ranges to read remaining content)
