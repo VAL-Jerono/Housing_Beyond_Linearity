@@ -320,5 +320,14 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border-t border-slate-700 pt-6 text-sm te
-(Content truncated due to size limit. Use line ranges to read remaining content)
+          <div className="border-t border-slate-700 pt-6 text-sm text-slate-500">
+            <p>
+              This analysis investigates whether nonlinear and ensemble models outperform classical linear regression 
+              in predicting median house values. The findings support using advanced models for real estate investment decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
