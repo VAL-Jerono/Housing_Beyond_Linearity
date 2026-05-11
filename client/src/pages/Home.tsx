@@ -35,7 +35,7 @@ export default function Home() {
           <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
             Most real estate decisions rely on linear assumptions about housing markets. 
             We tested 7 models on 20,640 California districts. The result: <span className="font-semibold text-teal-300">nonlinear models improve prediction accuracy by 36%.</span> 
-            That's not academic—that's competitive advantage.
+            That's not academic that's competitive advantage.
           </p>
           <div className="flex gap-4">
             <Button 
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="space-y-12">
             <div>
               <h2 className="text-3xl font-serif font-bold text-white mb-6">
-                Where Linear Models Fail—And Where You Win
+                Where Linear Models Fail And Where You Win
               </h2>
 
               {/* Key Insight Card */}
@@ -170,7 +170,7 @@ export default function Home() {
                 />
                 <p className="text-slate-300">
                   Coastal California commands premium prices. But the relationship between income and price varies dramatically by location. 
-                  A linear model applies one slope everywhere. The real market has multiple slopes—one per region.
+                  A linear model applies one slope everywhere. The real market has multiple slopes one per region.
                 </p>
               </Card>
 
@@ -185,7 +185,7 @@ export default function Home() {
                 <p className="text-slate-300">
                   The same income level produces different price outcomes in coastal vs inland markets. 
                   This interaction is invisible to linear regression but obvious to tree-based models. 
-                  It's the difference between a $500k and $300k valuation—a 40% gap.
+                  It's the difference between a $500k and $300k valuation a 40% gap.
                 </p>
               </Card>
 
