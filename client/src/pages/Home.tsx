@@ -30,7 +30,8 @@ export default function Home() {
             </span>
           </div>
           <h1 className="text-6xl font-serif font-bold text-teal-100 mb-6 leading-tight drop-shadow-lg">
-            California Housing.<br /> Price Prediction.
+            California  Housing.<br /> Price  Prediction.
+
           </h1>
           <p className="text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
             Most real estate decisions rely on linear assumptions about housing markets. 
