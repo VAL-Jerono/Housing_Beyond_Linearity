@@ -20,6 +20,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-slate-900 to-slate-800 border-b border-teal-700 py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -174,11 +175,11 @@ export default function Home() {
                       everywhere. The real market has multiple slopes — one per region.
                     </p>
                   </div>
-                  <div className="w-72 flex-shrink-0">
+                  <div className="w-96 flex-shrink-0 bg-white rounded-lg p-2">
                     <img
                       src={REAL_DATA_GEOGRAPHY}
                       alt="California housing price distribution by geography"
-                      className="w-full h-44 object-cover rounded-lg border border-slate-600"
+                      className="w-full h-56 object-contain rounded"
                     />
                   </div>
                 </div>
@@ -198,11 +199,11 @@ export default function Home() {
                       It's the difference between a $500k and $300k valuation — a 40% gap.
                     </p>
                   </div>
-                  <div className="w-72 flex-shrink-0">
+                  <div className="w-96 flex-shrink-0 bg-white rounded-lg p-2">
                     <img
                       src={REAL_DATA_INCOME_LOCATION}
                       alt="Income vs price: coastal vs inland markets"
-                      className="w-full h-44 object-cover rounded-lg border border-slate-600"
+                      className="w-full h-56 object-contain rounded"
                     />
                   </div>
                 </div>
@@ -258,11 +259,11 @@ export default function Home() {
                       risky speculation.
                     </p>
                   </div>
-                  <div className="w-72 flex-shrink-0">
+                  <div className="w-96 flex-shrink-0 bg-white rounded-lg p-2">
                     <img
                       src={REAL_DATA_ROI}
                       alt="Model performance comparison: ROI perspective"
-                      className="w-full h-44 object-cover rounded-lg border border-slate-600"
+                      className="w-full h-56 object-contain rounded"
                     />
                   </div>
                 </div>
